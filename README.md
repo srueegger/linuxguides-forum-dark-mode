@@ -26,6 +26,9 @@ Wen du das Theme selber kompilieren möchtest. Musst du Node.js in der Version 1
 
 Am einfachsten installierst du Node.js als Snap
 
+<a target="_blank" href="https://snapcraft.io/node">![snap-store](https://user-images.githubusercontent.com/11472914/216790631-2ea0c2bf-8977-43a6-b8cb-ca6704d46dd9.png)</a>
+
+
 ```bash
 sudo snap install node --classic --channel=18
 ```
