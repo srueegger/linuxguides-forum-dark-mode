@@ -3,6 +3,10 @@
     @extend %background200;
     @extend %border-color400;
   }
+  >form {
+    @extend %background200;
+    @extend %border-color400;
+  }
 }
 
 .wbbBoardList {
@@ -122,5 +126,32 @@ dl {
         }
       }
     }
+  }
+}
+
+input[type="text"] {
+  @extend %background100;
+  @extend %txt-color;
+  &:focus {
+    @extend %background100;
+    @extend %txt-color;
+  }
+  &:hover {
+    @extend %background100;
+    @extend %txt-color;
+  }
+}
+
+.inputItemList {
+  @extend %background100;
+  &:focus {
+    @extend %background100;
+  }
+  &:hover {
+    @extend %background100;
+  }
+  >.item {
+    @extend %background300;
+    @extend %txt-color;
   }
 }
