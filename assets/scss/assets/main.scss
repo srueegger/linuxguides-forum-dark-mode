@@ -1,0 +1,75 @@
+/* Variabeln importieren */
+@import "vars";
+
+/* Helpers importieren */
+@import "helpers/extends";
+
+/* Globale Style */
+body {
+  @extend %background100;
+  @extend %txt-color;
+}
+
+.icon {
+  @extend %txt-color;
+}
+
+.contentHeader {
+  @extend %txt-color;
+}
+
+.boxHeadline {
+  @extend %txt-color;
+}
+
+.boxesContentTop {
+  .boxTitle {
+    @extend %txt-color;
+  }
+}
+
+.boxesContentBottom {
+  .boxTitle {
+    @extend %txt-color;
+  }
+}
+
+.pageNavigation {
+  @extend %background200;
+}
+
+.breadcrumbs {
+  >ol {
+    >li {
+      a {
+        @extend %txt-color;
+      }
+    }
+  }
+}
+
+.boxesFooterBoxes {
+  @extend %background200;
+  @extend %txt-color;
+  .boxTitle {
+    @extend %txt-color;
+    a {
+      @extend %txt-color;
+    }
+  }
+}
+
+button {
+  @extend %background300;
+}
+
+.section .sectionTitle {
+  @extend %txt-color;
+}
+
+/* Elemente importieren */
+@import "parts/chatbox";
+@import "parts/sidebar";
+@import "parts/board";
+@import "parts/modal";
+@import "parts/usermenu";

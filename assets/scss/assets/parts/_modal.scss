@@ -1,0 +1,9 @@
+.dialogContainer {
+  >.dialogContent {
+    @extend %background300;
+    .dialogFormSubmit {
+      @extend %background200;
+      @extend %border-color100;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.content {
+  >.section {
+    @extend %background200;
+    @extend %border-color400;
+  }
+}
+
+.wbbBoardList {
+  .wbbBoard {
+    &:hover {
+      @extend %background300;
+    }
+  }
+  .wbbBoardDescription {
+    @extend %txt-color;
+  }
+}
+
+.tabularListRow {
+  &:not(.tabularListRowHead) {
+    &:hover {
+      @extend %background300;
+    }
+  }
+}
+
+dl {
+  &.statsDataList {
+    >dt {
+      @extend %txt-color;
+    }
+  }
+  &:not(.plain) {
+    >dd {
+      small {
+        &:not(.innerError) {
+          &:not(.innerInfo) {
+            &:not(.innerSuccess) {
+              &:not(.innerWarning) {
+                @extend %txt-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.messageSidebar {
+  @extend %background300;
+  @extend %txt-color;
+  .userAvatarImage {
+    @extend %border-color400;
+  }
+}
+
+.quoteBox {
+  @extend %background300;
+}
+
+.messageFooterNote {
+  @extend %border-color100;
+}
+
+.redactor-layer {
+  @extend %background100;
+  @extend %border-color100;
+}
+
+.messageTabMenuNavigation {
+  >ul {
+    @extend %background300;
+    @extend %border-color300;
+    >li {
+      @extend %border-color300;
+      &.active {
+        >a {
+          &:after {
+            @extend %border-color100;
+          }
+        }
+      }
+    }
+  }
+}
+
+.messageTabMenu {
+  &:not(.messageTabMenuContent) {
+    >.messageTabMenuContent {
+      &.active {
+        @extend %background300;
+        @extend %border-color300;
+      }
+    }
+  }
+}
+
+.containerList {
+  li {
+    &:hover {
+      @extend %background300;
+    }
+  }
+}
+
+.pagination {
+  >ul {
+    >li {
+      >a {
+        @extend %txt-color;
+        &:hover {
+          @extend %background300;
+        }
+      }
+      >span {
+        @extend %txt-color;
+      }
+      &.active {
+        > span {
+          @extend %background300;
+        }
+      }
+    }
+  }
+}

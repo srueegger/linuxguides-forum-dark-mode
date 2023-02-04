@@ -1,0 +1,14 @@
+.boxesSidebarRight {
+  @extend %txt-color;
+  .box {
+    &.box:not(.boxBorderless) {
+      @extend %background200;
+    }
+  }
+  .boxTitle {
+    @extend %txt-color;
+    a {
+      @extend %txt-color;
+    }
+  }
+}

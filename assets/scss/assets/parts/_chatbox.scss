@@ -1,0 +1,45 @@
+.shoutbox {
+  &.modernDesign {
+    @extend %background200;
+    .shoutboxEntry {
+      .shoutboxMessage {
+        @extend %background300;
+        @extend %txt-color;
+        &:before {
+          @extend %border-right-color300;
+        }
+      }
+    }
+    .shoutboxContentFooter {
+      @extend %background100;
+      .icon {
+        @extend %txt-color;
+      }
+    }
+  }
+  .redactor-box {
+    @extend %txt-color;
+  }
+}
+
+.dropdownMenu {
+  @extend %background200;
+  li {
+    >a {
+      @extend %txt-color;
+    }
+    &:hover {
+      &:not(.dropdownDivider) {
+        &:not(.dropdownList) {
+          &:not(.dropdownText) {
+            @extend %background300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.userMention {
+  @extend %background200;
+}

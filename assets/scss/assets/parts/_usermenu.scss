@@ -1,0 +1,10 @@
+@media (prefers-color-scheme: dark) {
+  .userMenu {
+    --background-color: #{$dark100};
+    --background-color-active: #{$dark300};
+    --border-color: #{$dark300};
+    --color: #{$dark500};
+    --color-active:#{$dark500};
+    --color-dimmed: #{$dark500};
+  }
+}
