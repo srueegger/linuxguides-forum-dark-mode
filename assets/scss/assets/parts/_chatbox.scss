@@ -28,17 +28,24 @@
     >a {
       @extend %txt-color;
     }
-    &:hover {
+    &:hover,
+    &:focus-within {
       &:not(.dropdownDivider) {
         &:not(.dropdownList) {
           &:not(.dropdownText) {
             @extend %background300;
+            a {
+              @extend %txt-color;
+            }
           }
         }
       }
     }
     &.active {
       @extend %background300;
+      a {
+        @extend %txt-color;
+      }
     }
   }
 }
