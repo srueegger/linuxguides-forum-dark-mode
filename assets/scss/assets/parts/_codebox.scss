@@ -1,0 +1,6 @@
+.codeBox {
+  @extend %background300;
+  .codeBoxHeader {
+    @extend %background100;
+  }
+}
