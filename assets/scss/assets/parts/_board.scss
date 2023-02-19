@@ -165,3 +165,14 @@ input[type="text"] {
     @extend %txt-color;
   }
 }
+
+select,
+input[type="text"][readonly] {
+  @extend %background100;
+  @extend %txt-color;
+  &:hover,
+  &:focus {
+    @extend %background100;
+    @extend %txt-color;
+  }
+}
