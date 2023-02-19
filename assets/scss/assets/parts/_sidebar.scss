@@ -11,4 +11,9 @@
       @extend %txt-color;
     }
   }
+  small {
+    a {
+      @extend %dark-green-color;
+    }
+  }
 }

@@ -22,6 +22,12 @@
   }
 }
 
+%dark-green-color {
+  @media (prefers-color-scheme: dark) {
+    color: $green_dark;
+  }
+}
+
 %border-color100 {
   @media (prefers-color-scheme: dark) {
     border-color: $dark100;
