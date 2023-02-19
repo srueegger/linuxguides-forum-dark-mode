@@ -108,6 +108,16 @@ dl {
   }
 }
 
+html {
+  &:not(.touch) {
+    .gridListItem {
+      &:hover {
+        @extend %background300;
+      }
+    }
+  }
+}
+
 .pagination {
   >ul {
     >li {
