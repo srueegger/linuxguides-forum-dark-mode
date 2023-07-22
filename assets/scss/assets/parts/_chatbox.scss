@@ -9,6 +9,17 @@
           @extend %border-right-color300;
         }
       }
+      &.isOwner {
+        .shoutboxMessage {
+          @extend %background-original;
+          &:before {
+            @extend %border-right-original;
+          }
+          a.userLink {
+            @extend %txt-color;
+          }
+        }
+      }
     }
     .shoutboxContentFooter {
       @extend %background100;

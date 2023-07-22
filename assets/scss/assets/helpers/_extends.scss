@@ -16,6 +16,12 @@
   }
 }
 
+%background-original {
+  @media (prefers-color-scheme: dark) {
+    background-color: $green_original;
+  }
+}
+
 %txt-color {
   @media (prefers-color-scheme: dark) {
     color: $dark500;
@@ -43,6 +49,12 @@
 %border-right-color300 {
   @media (prefers-color-scheme: dark) {
     border-right-color: $dark300;
+  }
+}
+
+%border-right-original {
+  @media (prefers-color-scheme: dark) {
+    border-right-color: $green_original;
   }
 }
 

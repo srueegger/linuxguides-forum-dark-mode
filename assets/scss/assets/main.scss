@@ -38,6 +38,10 @@ body {
   @extend %background200;
 }
 
+.userAvatarImage {
+  @extend %background200;
+}
+
 .breadcrumbs {
   >ol {
     >li {

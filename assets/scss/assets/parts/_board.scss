@@ -61,8 +61,12 @@ dl {
 
 .quoteBox {
   @extend %background300;
+  & > .toggleButton {
+    @extend %background300;
+    @extend %border-color300;
+  }
 }
-
+.quoteBox > .toggleButton
 .messageFooterNote {
   @extend %border-color100;
 }
@@ -139,7 +143,8 @@ html {
   }
 }
 
-input[type="text"] {
+input[type="text"],
+#editReason {
   @extend %background100;
   @extend %txt-color;
   &:focus {
@@ -175,4 +180,13 @@ input[type="text"][readonly] {
     @extend %background100;
     @extend %txt-color;
   }
+}
+
+.embeddedAttachmentLink,
+.embeddedImageLink {
+  @extend %border-color300;
+}
+
+.unfurlUrlCard {
+  @extend %background100;
 }
